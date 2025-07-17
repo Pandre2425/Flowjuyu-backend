@@ -1,0 +1,52 @@
+{
+  "name": "cortes-marketplace-api-main",
+  "version": "1.0.0",
+  "description": "Backend API para Cortes Marketplace. RESTful con Express 5, TypeScript, Sequelize y PostgreSQL.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "npx eslint ./src --ext .ts",
+    "format": "npx prettier --write ./src"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "sequelize",
+    "marketplace",
+    "postgres",
+    "backend"
+  ],
+  "author": "Equipo Cortes Marketplace",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-pg-simple": "^10.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/connect-pg-simple": "^7.0.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-session": "^1.18.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^20.4.2",
+    "@types/pg": "^8.15.4",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}

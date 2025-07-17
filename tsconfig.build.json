@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+    "noEmit": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "tests", "**/*.spec.ts"]
+}
